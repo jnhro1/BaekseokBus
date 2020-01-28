@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#4374D9"
+        android:layout_marginBottom="20dp"
+        android:weightSum="10">
+        <ImageView
+            android:id="@+id/btnhome"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/home"
+            android:background="#4374D9"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:paddingLeft="40dp"
+            android:text="셔틀버스 예매"
+            android:textSize="40dp"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:text="출발지를 선택하세요"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        ﻿<Spinner
+        android:id="@+id/spnStart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#bab5b5"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:text="도착지를 선택하세요"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        ﻿<Spinner
+        android:id="@+id/spnEnd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#bab5b5"
+        />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:text="가는날"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:text="시간"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        ﻿<Spinner
+        android:id="@+id/spnTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="#bab5b5"
+        />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#D9E5FF"
+            android:padding="10dp"
+            android:text="예매하기"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="안녕"
+            android:visibility="invisible"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="invisible"
+            android:id="@+id/textView_main_result" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="invisible"
+            android:id="@+id/writerText" />
+
+
+    </LinearLayout>
+</LinearLayout>
